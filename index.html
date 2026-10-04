@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Next Toppers — Redesign v2</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="#top">Next<b>Toppers</b></a>
+  <div class="lk"><a href="#courses">Courses</a><a href="#new">New Launches</a><a href="#toppers">Toppers</a><a href="#contact">Contact</a></div>
+  <div class="search"><input id="q" type="search" placeholder="Search batches…" aria-label="Search"></div>
+  <a class="btn hd" href="#contact">Request a callback</a>
+</nav>
+<aside>
+  <small>EXPLORE</small><a href="#top">Home</a><a href="#new">🔥 New Launches</a><a href="#courses">Courses</a><a href="#team">Founders</a><a href="#toppers">Our Toppers</a>
+  <small>CLASSES</small><a href="#courses" data-f="9">Class 9</a><a href="#courses" data-f="10">Class 10</a><a href="#courses" data-f="11">Class 11–12</a><a href="#courses" data-f="cuet">CUET</a>
+  <small>HELP</small><a href="#contact">Send a query</a><a href="#contact">Book a callback</a>
+</aside>
+<main id="top">
+  <div class="hero">
+    <div class="slide on"><span class="eye">LIVE CLASSES · CLASS 9–12</span><h1>Learn live. Score like a topper.</h1><p>Expert teachers, recorded backups and doubt solving — in one app.</p><a class="btn" href="#new">See new launches</a></div>
+    <div class="slide"><span class="eye">BOARD EXAM SPECIAL</span><h1>Abhay: the fast full-syllabus revision.</h1><p>Sample papers, PYQs and weekly tests to walk into boards confident.</p><a class="btn" href="#courses">View batch</a></div>
+    <div class="slide"><span class="eye">NEED HELP CHOOSING?</span><h1>Talk to us. We'll pick the right batch.</h1><p>Send a query or book a callback at a time that suits you.</p><a class="btn" href="#contact">Book callback</a></div>
+    <div class="dots"><i class="on"></i><i></i><i></i></div>
+  </div>
+
+  <section class="stats rv" style="padding-top:36px">
+    <div class="stat"><b data-n="1" data-s="M+">0</b><span>App downloads</span></div><div class="stat"><b data-n="12" data-s="">0</b><span>Classes covered</span></div>
+    <div class="stat"><b data-n="4" data-s="+">0</b><span>Flagship batches</span></div><div class="stat"><b data-n="100" data-s="%">0</b><span>Live + recorded</span></div>
+  </section>
+
+  <section id="new" class="rv">
+    <span class="eye">JUST LAUNCHED</span><h2>Newly launched courses</h2><p class="sub">Fresh batches, admissions open. Sample data — connect to real launches later.</p>
+    <div class="rail">
+      <div class="card"><span class="new">NEW</span><span class="tag">Class 10 · Starts 5 Oct</span><h3>Abhay 2.0</h3><p>Condensed board revision with 20 sample papers.</p><a class="btn" href="#contact">Get details</a></div>
+      <div class="card"><span class="new">NEW</span><span class="tag">Class 9 · Starts 8 Oct</span><h3>Aarambh 2.0</h3><p>Foundation batch with concept-first live classes.</p><a class="btn" href="#contact">Get details</a></div>
+      <div class="card"><span class="new">NEW</span><span class="tag">CUET · Starts 12 Oct</span><h3>CUET Crash Course</h3><p>Domain + general test with weekly mocks.</p><a class="btn" href="#contact">Get details</a></div>
+      <div class="card"><span class="new">NEW</span><span class="tag">Class 12 · Starts 15 Oct</span><h3>Commerce Pro</h3><p>Accounts, Business Studies and Economics.</p><a class="btn" href="#contact">Get details</a></div>
+    </div>
+  </section>
+
+  <section id="courses" class="rv">
+    <h2>Find your batch</h2><p class="sub">Filter by class, or use the search bar.</p>
+    <div class="chips" id="chips"><button class="chip on" data-c="all">All</button><button class="chip" data-c="9">Class 9</button><button class="chip" data-c="10">Class 10</button><button class="chip" data-c="11">Class 11–12</button><button class="chip" data-c="cuet">CUET</button></div>
+    <div class="grid" id="batches">
+      <div class="card" data-c="9"><span class="tag">Class 9</span><h3>Aarambh</h3><p>Full-syllabus foundation in Maths, Science and SST.</p><a class="btn o" href="#contact">Enquire</a></div>
+      <div class="card" data-c="10"><span class="tag">Class 10</span><h3>Abhay</h3><p>Intensive board revision with PYQs.</p><a class="btn o" href="#contact">Enquire</a></div>
+      <div class="card" data-c="10"><span class="tag">Class 10 · Pro</span><h3>Nirbhay Pro</h3><p>Premium batch with mentor support.</p><a class="btn o" href="#contact">Enquire</a></div>
+      <div class="card" data-c="9"><span class="tag">Class 9 · Pro</span><h3>Prarambh Pro</h3><p>Deeper concepts plus mentoring.</p><a class="btn o" href="#contact">Enquire</a></div>
+      <div class="card" data-c="11"><span class="tag">Class 11–12</span><h3>Science, Commerce, Humanities</h3><p>Stream-wise courses with weekly tests.</p><a class="btn o" href="#contact">Enquire</a></div>
+      <div class="card" data-c="cuet"><span class="tag">CUET</span><h3>CUET Preparation</h3><p>Domain and general test prep.</p><a class="btn o" href="#contact">Enquire</a></div>
+    </div><p id="none" class="sub" style="display:none">No batch found.</p>
+  </section>
+
+  <section id="team" class="team rv"><h2>Meet the founders</h2><p class="sub">Swap initials for real photos and confirmed bios.</p>
+    <div class="grid"><div class="card"><div class="av">DS</div><h3>Digraj Singh Rajput</h3><p>Co-founder</p></div><div class="card"><div class="av">PK</div><h3>Prashant Kirad</h3><p>Co-founder</p></div><div class="card"><div class="av">SN</div><h3>Shobhit Nirwan</h3><p>Co-founder</p></div></div>
+  </section>
+
+  <section id="toppers" class="rv" style="max-width:none;padding-left:0;padding-right:0">
+    <div style="padding:0 40px;max-width:1150px;margin:auto"><h2>Our toppers speak</h2><p class="sub">Sample text — replace with real results.</p></div>
+    <div class="marq"><div class="track" id="tr">
+      <div class="card"><div class="av" style="margin:0 0 10px">A</div><p>“Live doubt solving made Maths finally click.”</p><b>Aarav · Class 10</b></div>
+      <div class="card"><div class="av" style="margin:0 0 10px">S</div><p>“Test series felt just like the board paper.”</p><b>Sneha · Class 10</b></div>
+      <div class="card"><div class="av" style="margin:0 0 10px">R</div><p>“Recordings saved me before every exam.”</p><b>Rohan · Class 9</b></div>
+      <div class="card"><div class="av" style="margin:0 0 10px">M</div><p>“Affordable and consistent. Best decision.”</p><b>Meera · Class 12</b></div>
+    </div></div>
+  </section>
+
+  <section id="contact" class="rv">
+    <span class="eye">CONTACT</span><h2>Have a question? We'll get back.</h2><p class="sub">Send a query, or pick a callback slot. Demo only — nothing is sent.</p>
+    <div class="cg">
+      <div class="card"><h3 style="margin-bottom:14px">Send a query</h3>
+        <input placeholder="Your name"><input type="tel" placeholder="Phone number"><select><option>Select class</option><option>Class 9</option><option>Class 10</option><option>Class 11–12</option><option>CUET</option></select><textarea rows="4" placeholder="Your question"></textarea>
+        <button class="btn" type="button" onclick="this.textContent='Query sent ✓'">Send query</button></div>
+      <div class="card"><h3>Request a callback</h3><label id="mon"></label>
+        <div class="cal" id="cal"></div><label>Time slot (IST)</label><div class="slots" id="sl"></div>
+        <input type="tel" placeholder="Phone number"><button class="btn" type="button" id="cb">Confirm callback</button><p id="ok"></p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="fg">
+    <div><h4>Next<span style="color:var(--ac)">Toppers</span></h4><p style="font-size:.86rem;color:var(--mut)">Affordable live and recorded classes for Class 9–12, CUET and State Boards.</p></div>
+    <div><h4>Courses</h4><a href="#courses">Class 9</a><a href="#courses">Class 10</a><a href="#courses">Class 11–12</a><a href="#new">New launches</a></div>
+    <div><h4>Company</h4><a href="#team">Founders</a><a href="#toppers">Toppers</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+    <div><h4>Connect</h4><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Telegram</a></div>
+  </div><p class="copy">© 2026 Next Toppers · Redesign concept</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
